@@ -138,7 +138,7 @@
   },
   "scripts": {
     "format": "prettier --write --single-quote --trailing-comma=es5 --bracket-spacing false *.js scripts/*.js src/{*.js,**/*.js}",
-    "clean": "rimraf src/en.js coverage/ dist/ lib/ locale-data/ test/renderer.js",
+    "clean": "rimraf coverage/ dist/ lib/ test/renderer.js",
     "build:data": "babel-node scripts/build-data",
     "build:lib": "rollup -c rollup.config.lib.js",
     "build:dist:dev": "cross-env NODE_ENV=development rollup -c rollup.config.dist.js",
